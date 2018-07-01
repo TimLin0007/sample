@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Sample</title>
+</head>
+<body>
+    <h1 th:inline="text">Sample</h1>
+    <table>
+        <!-- 名称 -->
+        <thead>
+             <tr>
+                 <th >id</th>
+                 <th >学号</th>
+                 <th >姓名</th>
+                 <th >成绩</th>
+             </tr>
+
+         </thead>
+         <!-- 动态插入内容 -->
+         <tbody>
+             <tr th:each="s,iterStat : ${students}" th:class="${iterStat.odd}? 'odd'">
+                     <td th:text=" ${s.getId()}"></td>
+                 　　<td th:text=" ${s.getNo()}"></td>
+                 　　<td th:text=" ${s.getName()}"></td>
+                 　　<td th:text=" ${s.getScore()}"></td>
+                    </td>
+             </tr>
+         </tbody>
+    </table>
+</body>
+</html>
