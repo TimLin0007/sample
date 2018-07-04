@@ -14,4 +14,8 @@ public interface StudentService {
 
     List<Student> getAllStudent();
 
+    boolean insert(Student student);
+
+    boolean update(Integer id,Double score);
+
 }

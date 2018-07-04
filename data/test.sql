@@ -18,7 +18,7 @@ SET NAMES utf8;
 SET FOREIGN_KEY_CHECKS = 0;
 
 -- ----------------------------
---  Table structure for `student`
+--  Table structure for `student.html`
 -- ----------------------------
 DROP TABLE IF EXISTS `student`;
 CREATE TABLE `student` (
@@ -30,7 +30,7 @@ CREATE TABLE `student` (
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1 COMMENT='学生表';
 
 -- ----------------------------
---  Records of `student`
+--  Records of `student.html`
 -- ----------------------------
 BEGIN;
 INSERT INTO `student` VALUES ('1', 'S201625001', '张三', '85.60'), ('2', 'S201625002', '李四', '90.45');

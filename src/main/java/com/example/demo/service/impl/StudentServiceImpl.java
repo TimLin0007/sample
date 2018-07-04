@@ -24,4 +24,24 @@ public class StudentServiceImpl implements StudentService {
     public List<Student> getAllStudent() {
         return studentDAO.getAllStudent();
     }
+
+    @Override
+    public boolean insert(Student student) {
+        if (null == student){
+            return false;
+        }
+        // do something...
+        studentDAO.insert(student);
+        return true;
+    }
+
+    @Override
+    public boolean update(Integer id, Double score) {
+        if ( null == id || null  == score){
+            return false;
+        }
+        // do something...
+        studentDAO.update(id,score);
+        return true;
+    }
 }
